@@ -2,6 +2,21 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
+<script type="text/javascript">
+	
+</script>
+
+<style>
+.H_submenu{
+	line-height:80px;
+	margin-top: 5px;
+	width: 100%;
+	height: 20%;
+	background-color: green;
+	border-bottom: 5px inset #224;
+}
+</style>
+
 <div style="width: 50%; height: 100%; margin-left: 25%;">
 	<div style="height: 95%; width: 30%; float: left">
 		<a href="../center/Main">
@@ -9,7 +24,7 @@
 		</a>
 	</div>
 	<c:forEach begin="1" end="4" var="i">
-		<div class="H_menudiv" style="margin-left:50px; line-height:110px; position:relative; height: 100%; float: right;">
+		<div align="center" class="H_menudiv" style="display:block; z-index:1; margin-left:20px; line-height:80px; overflow:hidden; position:relative; width:120px; height: 380%; float: right;">
 			<c:choose>
 				<c:when test="${i==4 }">intro</c:when>
 				<c:when test="${i==3 }">Reservation</c:when>
@@ -17,6 +32,24 @@
 				<c:otherwise>Q&A</c:otherwise>
 			</c:choose>
 			<img style="width: 20px; height: 20px;" src="http://www.pkicon.com/icons/30984/Plus-Vector-256.png">
+			<c:choose>
+				<c:when test="${i==4 }">
+					<a><div class="H_submenu">공지사항</div></a>
+					<a><div class="H_submenu">회사소개</div></a>
+					<a><div class="H_submenu">경영진소개</div></a>
+				</c:when>
+				<c:when test="${i==3 }">
+					<a><div class="H_submenu" >방문예약</div></a>
+					<a><div class="H_submenu" >출장예약</div></a>
+				</c:when>
+				<c:when test="${i==2 }">
+					<a href="../center/Download"><div class="H_submenu">제품설명</div></a>
+				</c:when>
+				<c:otherwise>
+					<a><div class="H_submenu">방문예약</div></a>
+					<a><div class="H_submenu">출장예약</div></a>
+				</c:otherwise>
+			</c:choose>
 		</div>
 	</c:forEach>
 </div>

@@ -10,10 +10,11 @@ label{
 	display: inline-block;
 }
 </style>
+<div style="position: absolute; width: 100%; height: 100%">
 <div align="center" style="width: 100%; height: 70%; border: 1px thick black;">
 <br>
 <h3>이용약관</h3>
-	<div align="left" style="width: 80%; height: 80%; border: 5px solid #244; overflow: auto;">
+	<div align="left" style="width: 80%; height: 80%; border: 5px solid #244; position: relative; overflow: auto;">
 		■개인정보의 수집 및 이용<br><br>
 
 	1. 개인정보의 수집ㆍ이용 목적<br>
@@ -70,3 +71,4 @@ label{
 	</fieldset>
 
 </form>
+</div>
