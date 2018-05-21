@@ -7,10 +7,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import model.Action;
+import model.ActionData;
+
 /**
  * Servlet implementation class joincontroll
  */
-@WebServlet("/joincontroll")
+@WebServlet("/userJoin/*")
 public class joincontroll extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -27,7 +30,26 @@ public class joincontroll extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		request.setCharacterEncoding("UTF-8");
+		
+		String service = request.getRequestURI().substring((request.getContextPath()+"/userJoin/").length());
+
+		System.out.println(service);
+		try {
+			Action action = (Action)Class.forName("userJoin."+service).newInstance();
+			ActionData data = action.exec(request,response);
+			
+			if(data!=null) {
+				if(data.isRedirect()) {
+					response.sendRedirect(data.getPath());
+				}else {
+					request.getRequestDispatcher("../view/main.jsp").forward(request, response);
+				}
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	/**

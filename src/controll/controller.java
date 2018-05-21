@@ -38,12 +38,9 @@ public class controller extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		request.setCharacterEncoding("UTF-8");
-		/*String txt = request.getRequestURI().substring((request.getContextPath()+"/").length());
-		String service = txt.replace("/", ".");*/
-		
+	
 		String service = request.getRequestURI().substring((request.getContextPath()+"/center/").length());
 
-		/*service = service.substring(service.indexOf(".")+1);*/
 		System.out.println(service);
 		try {
 			Action action = (Action)Class.forName("fuc."+service).newInstance();
