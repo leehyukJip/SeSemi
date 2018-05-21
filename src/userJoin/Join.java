@@ -11,7 +11,7 @@ public class Join implements Action{
 	public ActionData exec(HttpServletRequest request, HttpServletResponse response) {
 		// TODO Auto-generated method stub
 		ActionData data = new ActionData();
-		
+		//¡÷ºÆ
 		request.setAttribute("main", "../aa/join.jsp");
 		return data;
 	}
