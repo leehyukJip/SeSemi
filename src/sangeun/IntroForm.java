@@ -12,7 +12,7 @@ public class IntroForm  implements Action{
 	public ActionData exec(HttpServletRequest request, HttpServletResponse response) {
 		// TODO Auto-generated method stub
 		ActionData res = new ActionData();
-		request.setAttribute("main", "introForm.jsp");
+		request.setAttribute("main", "bb/introForm.jsp");
 		
 		return res;
 	}

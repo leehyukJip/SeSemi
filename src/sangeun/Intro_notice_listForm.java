@@ -52,7 +52,7 @@ public class Intro_notice_listForm implements Action{
 		request.setAttribute("totalPage", totalPage);
 		request.setAttribute("data", dao.list(start, end));
 
-		request.setAttribute("main", "intro_notice_listForm.jsp");
+		request.setAttribute("main", "bb/intro_notice_listForm.jsp");
 		
 
 		return res;

@@ -6,6 +6,10 @@
 <div>
 	<table style="text-align: center;">
 		<tr>
+		 	<div id = "s_photo_1">dfd</div>
+		 	<div id = "s_photo_2">dd</div>
+		 	<div id = "s_photo_3">ddd</div>
+		 	
 		 	
 		</tr>
 			

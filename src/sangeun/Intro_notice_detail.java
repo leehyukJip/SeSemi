@@ -23,7 +23,7 @@ public class Intro_notice_detail implements Action{
 		
 		request.setAttribute("data", dao.detail(id));
 		dao.close();
-		request.setAttribute("main", "intro_notice_detail.jsp");
+		request.setAttribute("main", "bb/intro_notice_detail.jsp");
 		
 		return data;
 	}

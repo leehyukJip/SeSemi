@@ -26,7 +26,7 @@ public class Intro_notice_DeleteReg implements Action {
 		
 		ActionData data = new ActionData();
 		
-		request.setAttribute("main", "alert.jsp");
+		request.setAttribute("main", "bb/alert.jsp");
 		request.setAttribute("msg", msg);
 		request.setAttribute("url", url);
 

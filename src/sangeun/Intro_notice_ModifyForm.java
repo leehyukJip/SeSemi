@@ -17,7 +17,7 @@ public class Intro_notice_ModifyForm implements Action{
 		dao.close();
 		
 
-		request.setAttribute("main", "intro_notice_modifyForm.jsp");
+		request.setAttribute("main", "bb/intro_notice_modifyForm.jsp");
 		ActionData data = new ActionData();
 
 		return data;

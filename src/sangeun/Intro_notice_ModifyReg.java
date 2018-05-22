@@ -33,7 +33,7 @@ public class Intro_notice_ModifyReg implements Action{
 		
 		request.setAttribute("msg", msg);
 		request.setAttribute("url", url);
-		request.setAttribute("main", "alert.jsp");
+		request.setAttribute("main", "bb/alert.jsp");
 		return new ActionData();
 
 	}

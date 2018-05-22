@@ -12,7 +12,7 @@ public class about_sangsung  implements Action{
 	public ActionData exec(HttpServletRequest request, HttpServletResponse response) {
 		// TODO Auto-generated method stub
 		ActionData res = new ActionData();
-		request.setAttribute("main", "about_sangsung.jsp");
+		request.setAttribute("main", "bb/about_sangsung.jsp");
 		
 		return res;
 	}
