@@ -62,7 +62,7 @@ html,body{
 	<jsp:include page="inc/top.jsp"></jsp:include>
 </div>
 <div style="width: 50%; height:80%; margin-left: 25%; position:relative;">
-<jsp:include page="../view/bb/${main }"></jsp:include>
+<jsp:include page="../view/${main }"></jsp:include>
 </div>
 <div style="width: 100%; height: 5%; border-bottom: 1px inset gray; position: relative;">
 </div>

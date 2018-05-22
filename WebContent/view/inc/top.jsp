@@ -34,7 +34,7 @@
 			<img style="width: 20px; height: 20px;" src="http://www.pkicon.com/icons/30984/Plus-Vector-256.png">
 			<c:choose>
 				<c:when test="${i==4 }">
-					<a><div class="H_submenu">공지사항</div></a>
+					<a href="../bb/"><div class="H_submenu">공지사항</div></a>
 					<a><div class="H_submenu">회사소개</div></a>
 					<a><div class="H_submenu">경영진소개</div></a>
 				</c:when>
